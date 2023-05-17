@@ -1,0 +1,87 @@
+.order {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/images_mainpage/order/orderback480x400.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order__header {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary-light-txt-color;
+  padding: 0 0 30px;
+  max-width: 365px;
+  margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .order {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/images_mainpage/order/orderback480x400@2x.jpg);
+    background-size: cover;
+  }
+}
+
+// <!-- TABLET -->
+
+@media screen and (min-width: 768px) {
+  .order {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/images_mainpage/order/orderback768x400.jpg);
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/images_mainpage/order/orderback768x400@2x.jpg);
+      background-size: cover;
+    }
+  }
+}
+
+// <!-- DESKTOP -->
+
+@media screen and (min-width: 1200px) {
+  .order__header {
+    font-size: 44px;
+    line-height: 1.363;
+    padding: 0 0 30px;
+    max-width: 692px;
+  }
+  .order {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/images_mainpage/order/orderback1600x600.jpg);
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/images_mainpage/order/orderback1600x600@2x.jpg);
+      background-size: cover;
+    }
+  }
+}

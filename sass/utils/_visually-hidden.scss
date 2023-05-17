@@ -1,0 +1,20 @@
+.visually-hidden {
+  position: absolute !important;
+  top: 18px;
+  left: 5px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+// <!-- DESKTOP -->
+
+@media screen and (min-width: 1200px) {
+  .visually-hidden {
+    left: 14px;
+  }
+}

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--NAGŁÓWEK-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Festive&amp;family=Qahiri&amp;family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;family=Rubik:wght@300&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Studio S.G.</title>
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="https://sglinkau.github.io/goit-markup-hw-08/"
+          >Web<span class="logo__accent--dark-theme">Studio</span></a
+        >
+        <!-- NAV MENU -->
+        <nav class="nav-menu">
+          <ul class="nav-menu__list list">
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link"
+                href="https://sglinkau.github.io/goit-markup-hw-08/"
+                >Agencja</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a
+                class="nav-menu__link nav-menu__link--active"
+                href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <a class="email" href="mailto:info@devstudio.com">
+            <svg class="email__icon">
+              <use href="images/sprite.svg#icon-envelope"></use></svg
+            >info@devstudio.com</a
+          >
+          <a href="tel:+48111111111" class="phone-number">
+            <svg class="phone-number__icon">
+              <use href="images/sprite.svg#icon-phone"></use></svg
+            >+48 111 111 111</a
+          >
+        </div>
+        <!-- MENU MOBILE -->
+        <button mobile-menu-open type="button" class="menu-mobile__open">
+          <svg class="menu-mobile__open-icon">
+            <use href="images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div mobile-menu class="menu-mobile backdrop is-hidden">
+        <button
+          type="button"
+          class="close-btn menu-mobile__close-btn"
+          mobile-menu-close
+        >
+          <svg class="close-btn__icon">
+            <use href="images/sprite.svg#icon-mobilezamykacz"></use>
+          </svg>
+        </button>
+
+        <ul class="menu-mobile__list">
+          <li class="menu-mobile__item list">
+            <a
+              class="menu-mobile__link menu-mobile__link--active"
+              href="https://sglinkau.github.io/goit-markup-hw-08/"
+              >Agencja</a
+            >
+          </li>
+          <li class="menu-mobile__item list">
+            <a class="menu-mobile__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-mobile__item list">
+            <a class="menu-mobile__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item list">
+            <a
+              class="mobile-contacts__link mobile-contacts__link--accent"
+              href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="mobile-contacts__item list">
+            <a class="mobile-contacts__link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-socials">
+          <li class="mobile-socials__item list">
+            <a href="" class="mobile-socials__link">Instagram</a>
+          </li>
+          <li class="mobile-socials__item list">
+            <a href="" class="mobile-socials__link">Twitter</a>
+          </li>
+          <li class="mobile-socials__item list">
+            <a href="" class="mobile-socials__link">Facebook</a>
+          </li>
+          <li class="mobile-socials__item list">
+            <a href="" class="mobile-socials__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- PORTFOLIO FILTERS -->
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <ul class="filters__list list">
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Wszystkie</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Strony</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Aplikacje</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Design</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button">Marketing</button>
+            </li>
+          </ul>
+
+          <!-- PROJECTS -->
+          <ul class="projects__list list">
+            <li class="projects__item">
+              <div class="projects__wrapper">
+                <picture class="projects__img">
+                  <source
+                    srcset="
+                      images/images_portfolio/1img370x294.jpg    1x,
+                      images/images_portfolio/1img370x294@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/1img354x294.jpg    1x,
+                      images/images_portfolio/1img354x294@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/1img450x294.jpg    1x,
+                      images/images_portfolio/1img450x294@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="projects__img"
+                    src="images/images_portfolio/1img320x240.jpg "
+                    alt="Technocrack"
+                  />
+                </picture>
+
+                <div class="projects__text-popup">
+                  <p>
+                    Technocrack jest popularną platformą wykorzystywaną do
+                    rozpowszechniania TechnoCracku. Firmy wykorzystują tę
+                    platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__border">
+                <p class="projects__title">Technocrack</p>
+                <p class="projects__type">Strona internetowa</p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__wrapper">
+                <picture class="projects__img">
+                  <source
+                    srcset="
+                      images/images_portfolio/2img370x294.jpg    1x,
+                      images/images_portfolio/2img370x294@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/2img354x294.jpg    1x,
+                      images/images_portfolio/2img354x294@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/2img450x294.jpg    1x,
+                      images/images_portfolio/2img450x294@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="projects__img"
+                    src="images/images_portfolio/2img320x240.jpg "
+                    alt="Grafika New Orlean vs Golden Star"
+                  />
+                </picture>
+
+                <div class="projects__text-popup">
+                  <p>
+                    Tutaj zrobiliśmy grafikę jak dwóch panopków gra sobie w
+                    kosza a w tle tak jakby woda ale taka gęstsza czyli chyba
+                    taki glut robi taki plusk i jest wow bo oni grają w
+                    koszykówkę a wtle coś się leje.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__border">
+                <p class="projects__title">Grafika New Orlean vs Golden Star</p>
+                <p class="projects__type">Design</p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__wrapper">
+                <picture class="projects__img">
+                  <source
+                    srcset="
+                      images/images_portfolio/3img370x294.jpg    1x,
+                      images/images_portfolio/3img370x294@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/3img354x294.jpg    1x,
+                      images/images_portfolio/3img354x294@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/3img450x294.jpg    1x,
+                      images/images_portfolio/3img450x294@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="projects__img"
+                    src="images/images_portfolio/3img320x240.jpg "
+                    alt="Restauracja Seafood"
+                  />
+                </picture>
+
+                <div class="projects__text-popup">
+                  <p>
+                    Ci to chcieli mieć coś ładnego na obrazku ale wybrali rybę.
+                    Dlaczego rybę? Nie wiem. Przecież ryby śmierdzą i mają takie
+                    dziwne oczka a do tego mają ości. Mogli dać kraba, zwłaszcza
+                    tego ze Sponge Boba.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__border">
+                <p class="projects__title">Restauracja Seafood</p>
+                <p class="projects__type">Aplikacja</p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__wrapper">
+                <picture class="projects__img">
+                  <source
+                    srcset="
+                      images/images_portfolio/4img370x294.jpg    1x,
+                      images/images_portfolio/4img370x294@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/4img354x294.jpg    1x,
+                      images/images_portfolio/4img354x294@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/4img450x294.jpg    1x,
+                      images/images_portfolio/4img450x294@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="projects__img"
+                    src="images/images_portfolio/4img320x240.jpg "
+                    alt="Projekt Prime"
+                  />
+                </picture>
+                <div class="projects__text-popup">
+                  <p>
+                    Kampania reklamowa dla słuchawek nausznych. Jak widać jest
+                    skuteczna bo właśnie ją oglądasz więc udało nam się ją komuś
+                    pokazać więc ona działa. Bo na tym polega reklama. Na
+                    pokazywaniu.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__border">
+                <p class="projects__title">Projekt Prime</p>
+                <p class="projects__type">Marketing</p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__wrapper">
+                <picture class="projects__img">
+                  <source
+                    srcset="
+                      images/images_portfolio/5img370x294.jpg    1x,
+                      images/images_portfolio/5img370x294@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/5img354x294.jpg    1x,
+                      images/images_portfolio/5img354x294@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/5img450x294.jpg    1x,
+                      images/images_portfolio/5img450x294@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="projects__img"
+                    src="images/images_portfolio/5img320x240.jpg "
+                    alt="Projekt Boxes"
+                  />
+                </picture>
+                <div class="projects__text-popup">
+                  <p>
+                    Jak widać na załączonym obrazku zrobiliśmy dwa pudełka.
+                    Jedno małe a drugie średnie. W zasadzie oba są małe ale
+                    dzięki temu, że jedno jest mniejsze to drugie wydaje się
+                    normalne. No i mają inne kolory! WOW!
+                  </p>
+                </div>
+              </div>
+              <div class="projects__border">
+                <p class="projects__title">Projekt Boxes</p>
+                <p class="projects__type">Aplikacja</p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__wrapper">
+                <picture class="projects__img">
+                  <source
+                    srcset="
+                      images/images_portfolio/6img370x294.jpg    1x,
+                      images/images_portfolio/6img370x294@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/6img354x294.jpg    1x,
+                      images/images_portfolio/6img354x294@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/6img450x294.jpg    1x,
+                      images/images_portfolio/6img450x294@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="projects__img"
+                    src="images/images_portfolio/6img320x240.jpg "
+                    alt="Inspiration has no Borders"
+                  />
+                </picture>
+                <div class="projects__text-popup">
+                  <p>
+                    Strona do szmuglowania nielegalnych imigrantów. <br />Tak po
+                    prostu.
+                  </p>
+                </div>
+              </div>
+              <div class="projects__border">
+                <p class="projects__title">Inspiration has no Borders</p>
+                <p class="projects__type">Strona internetowa</p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__wrapper">
+                <picture class="projects__img">
+                  <source
+                    srcset="
+                      images/images_portfolio/7img370x294.jpg    1x,
+                      images/images_portfolio/7img370x294@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/7img354x294.jpg    1x,
+                      images/images_portfolio/7img354x294@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/7img450x294.jpg    1x,
+                      images/images_portfolio/7img450x294@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="projects__img"
+                    src="images/images_portfolio/7img320x240.jpg "
+                    alt="Magazyn Limited Edition"
+                  />
+                </picture>
+                <div class="projects__text-popup">
+                  <p>
+                    Gazetka gdzie większość słów to obrazki. Ale za to na każdej
+                    z nich przypomina Ci, że jest LIMITOWANA co znaczy, że
+                    wyrzuciłeś pieniądze w błoto na coś czego już NIKT INNY nie
+                    kupi. Brawo!
+                  </p>
+                </div>
+              </div>
+              <div class="projects__border">
+                <p class="projects__title">Magazyn Limited Edition</p>
+                <p class="projects__type">Design</p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__wrapper">
+                <picture class="projects__img">
+                  <source
+                    srcset="
+                      images/images_portfolio/8img370x294.jpg    1x,
+                      images/images_portfolio/8img370x294@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/8img354x294.jpg    1x,
+                      images/images_portfolio/8img354x294@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/8img450x294.jpg    1x,
+                      images/images_portfolio/8img450x294@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="projects__img"
+                    src="images/images_portfolio/8img320x240.jpg "
+                    alt="Projekt LAB"
+                  />
+                </picture>
+                <div class="projects__text-popup">
+                  <p>
+                    Nie wiem o co tu chodziło XD Niby projekt "LAB" a na obrazku
+                    się układa w "LET", jest tam "Label", jakiś "Tag".<br />
+                    Serio nie wiem.<br />
+                    To był piątek wieczór okej?
+                  </p>
+                </div>
+              </div>
+              <div class="projects__border">
+                <p class="projects__title">Projekt LAB</p>
+                <p class="projects__type">Marketing</p>
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__wrapper">
+                <picture class="projects__img">
+                  <source
+                    srcset="
+                      images/images_portfolio/9img370x294.jpg    1x,
+                      images/images_portfolio/9img370x294@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/9img354x294.jpg    1x,
+                      images/images_portfolio/9img354x294@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      images/images_portfolio/9img450x294.jpg    1x,
+                      images/images_portfolio/9img450x294@2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    class="projects__img"
+                    src="images/images_portfolio/9img320x240.jpg "
+                    alt="Growing Business"
+                  />
+                </picture>
+                <div class="projects__text-popup">
+                  <p>
+                    Tu zrobiliśmy apkę żeby ludzie mogli rozwijać swój biznes a
+                    co za tym idzie zarabiać więcej czyli płacić nam więcej za
+                    apkę dzieki, której zarabiają więcej, dzięki czemu płacą nam
+                    więcej...<br />No rozumiesz no.<br />STONKS
+                  </p>
+                </div>
+              </div>
+              <div class="projects__border">
+                <p class="projects__title">Growing Business</p>
+                <p class="projects__type">Aplikacja</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container section">
+        <div class="address__wrapper">
+          <a
+            class="logo logo--footer"
+            href="https://sglinkau.github.io/goit-markup-hw-08/"
+            >Web<span class="logo__accent--light-theme">Studio</span></a
+          >
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-list__item">
+                <a
+                  class="address-list__link address-list__link--light-theme"
+                  href="https://goo.gl/maps/AZBb3oWcoWajxazx5"
+                  target="_blank"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a class="address-list__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a class="address-list__link" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-us__wrapper">
+          <p class="join-us">DOŁĄCZ DO NAS</p>
+          <ul class="socials-list list">
+            <li class="socials-list__item social-padding">
+              <a href="#" class="socials-list__link join-us--grey-link-theme">
+                <svg class="socials-list__icon join-us--white-icon-theme">
+                  <use href="images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item social-padding">
+              <a href="#" class="socials-list__link join-us--grey-link-theme">
+                <svg class="socials-list__icon join-us--white-icon-theme">
+                  <use href="images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item social-padding">
+              <a href="#" class="socials-list__link join-us--grey-link-theme">
+                <svg class="socials-list__icon join-us--white-icon-theme">
+                  <use href="images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item social-padding">
+              <a href="#" class="socials-list__link join-us--grey-link-theme">
+                <svg class="socials-list__icon join-us--white-icon-theme">
+                  <use href="images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- NEWSLETTER -->
+        <div class="sign-up__wrapper">
+          <p class="sing-up">Zapisz się do newslettera</p>
+          <form
+            action="#"
+            class="sign-up__form"
+            name="signup_form"
+            autocomplete="on"
+          >
+            <input
+              class="sign-up__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="primary-btn sign-up__btn" type="submit">
+              Zapisz się
+              <svg class="sign-up__icon">
+                <use href="images/sprite.svg#icon-form-footer"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SKRYPTY -->
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

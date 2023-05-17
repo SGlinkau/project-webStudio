@@ -1,0 +1,42 @@
+.logo {
+  font-family: $secondary-font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+
+  letter-spacing: 0.03em;
+  color: $accent-color;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &__accent--dark-theme {
+    color: $primary-dark-txt-color;
+  }
+
+  &__accent--light-theme {
+    color: $primary-light-txt-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 83px;
+
+    &--footer {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}

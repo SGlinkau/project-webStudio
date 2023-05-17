@@ -1,0 +1,145 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.nav-menu,
+.phone-number,
+.email {
+  display: none;
+}
+
+// <!-- TABLET -->
+
+@media screen and (min-width: 768px) {
+  .menu-mobile__open {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  .nav-menu__link {
+    color: $primary-dark-txt-color;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 4px;
+      background: $accent-color;
+      border-radius: 2px;
+      position: absolute;
+      bottom: -32px;
+      right: 0;
+      transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover:after,
+    &:focus:after {
+      width: 100%;
+      left: 0;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  .nav-menu__link.nav-menu__link--active {
+    color: $accent-color;
+    position: relative;
+  }
+
+  .nav-menu__link.nav-menu__link--active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: $accent-color;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -32px;
+  }
+
+  .nav-menu__link,
+  .email,
+  .phone-number {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contact {
+    margin-left: auto;
+  }
+
+  .email {
+    margin-bottom: 10px;
+  }
+
+  .email,
+  .phone-number {
+    color: $secondary-txt-color;
+    display: flex;
+    align-items: center;
+  }
+
+  .email:hover,
+  .email:focus,
+  .phone-number:hover,
+  .phone-number:focus {
+    color: $accent-color;
+  }
+
+  .email__icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  .phone-number__icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 15px;
+    fill: currentColor;
+  }
+}
+
+// <!-- DESKTOP -->
+
+@media screen and (min-width: 1200px) {
+  .nav-menu {
+    display: flex;
+
+    &__item:not(:last-child) {
+      margin-right: 46px;
+    }
+  }
+
+  .email {
+    margin-left: auto;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+
+  .phone-number__icon {
+    margin-right: 10px;
+  }
+}

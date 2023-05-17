@@ -1,0 +1,62 @@
+.team {
+  background-color: $secondary-backgorund-color;
+  margin: 0 auto;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__employee {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.842;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  &__occupation {
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-txt-color;
+    padding-bottom: 16px;
+  }
+}
+
+.team__item {
+  background-color: $primary-light-txt-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+// <!-- TABLET -->
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    justify-content: space-around;
+  }
+
+  .team__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

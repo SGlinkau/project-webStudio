@@ -1,0 +1,81 @@
+.clients {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    min-width: 230px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients__list {
+    justify-content: space-around;
+  }
+
+  .clients__item {
+    flex-basis: calc(100% / 2 - 30px);
+    min-width: 210px;
+    flex-grow: 1;
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__list {
+    justify-content: space-around;
+  }
+
+  .clients__item {
+    flex-basis: calc(100% / 3 - 30px);
+    min-width: 226px;
+    flex-grow: 1;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    justify-content: space-between;
+  }
+
+  .clients__item {
+    min-width: 170px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,135 @@
+.footer {
+  background-color: $primary-background-color;
+  margin: 0 auto;
+}
+
+.address-list {
+  padding-top: 20px;
+}
+
+.address-list__item {
+  &:not(:last-child) {
+    padding-bottom: 9px;
+  }
+  &:last-child {
+    padding-bottom: 60px;
+  }
+}
+
+.address-list__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &--light-theme {
+    color: $primary-light-txt-color;
+  }
+}
+
+.join-us--grey-link-theme {
+  background: rgba(255, 255, 255, 0.1);
+}
+.join-us--white-icon-theme {
+  fill: $primary-light-txt-color;
+}
+
+.join-us,
+.sing-up {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-light-txt-color;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.sign-up__btn {
+  position: relative;
+  padding-right: 76px;
+}
+
+.sign-up__icon {
+  fill: $primary-light-txt-color;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 28px;
+}
+
+.sign-up__input {
+  max-width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  color: $primary-light-txt-color;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-light-txt-color;
+  }
+
+  &:focus::placeholder {
+    color: $primary-light-txt-color;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .sign-up__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address__wrapper,
+  .join-us__wrapper,
+  .sign-up__wrapper {
+    flex-basis: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-us__wrapper {
+    padding-left: 70px;
+  }
+
+  .sign-up__wrapper {
+    padding-left: 78px;
+  }
+
+  .sign-up__form {
+    display: flex;
+  }
+
+  .sign-up__input {
+    width: 358px;
+    margin-right: 12px;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-light-txt-color;
+    }
+
+    &:focus::placeholder {
+      color: $primary-light-txt-color;
+    }
+  }
+  .address-list__item {
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
