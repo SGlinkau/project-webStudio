@@ -1,1 +1,1 @@
-Simple resposive site made by me during my learning time in 2022.
+My first project that I have created from scratch during my online programing course from 2022. It's simple resposive site made for online agency that's creating, managing and promoting other businesses. 
